@@ -1,0 +1,39 @@
+# Kalkulators Danila Poimanovs
+
+from colorama import init
+from colorama import Fore, Back, Style
+
+init()
+
+print( Fore.WHITE )
+print( Back.GREEN )
+
+what = input( "Ko mēs darām? (+, -, *, /): " )
+
+print( Back.CYAN )
+
+a = float( input("Vadīt pirmo numuru: ") )
+b = float( input("Vadīt otro numuru: ") )
+
+print( Back.RED )
+
+if what == "+":
+    c = a + b
+    print("Rezultāts: " + str(c))
+
+elif what == "-":
+    c = a - b
+    print("Rezultāts: " + str(c))
+
+elif what == "*":
+    c = a * b
+    print("Rezultāts: " + str(c))
+
+elif what == "/":
+    c = a / b
+    print("Rezultāts: " + str(c))
+
+else:
+    print("Atlasīta nederīga darbība!")
+
+input()
